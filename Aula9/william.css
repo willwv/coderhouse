@@ -26,6 +26,7 @@ section article p {
 .tamanho-botao {
     width: 500px;
 }
+
 .botao-vermelho {
     background-color: red;
 }
@@ -33,24 +34,6 @@ section article p {
 #produtos {
     background-color: aqua;
 }
-/* 
-p {
-    color: red ;
-}
-p {
-    color: green;
-} */
-
-/* p {
-    font-size: 60px;
-}
-p {
-    color: green;
-} */
-
-/* #produtos {
-    padding: 0px;
-} */
 
 * {
     margin: 0;
@@ -69,25 +52,9 @@ p {
 }
 p {
     color:  #0c250c;
-    /* font-style: italic; */
     font-weight: normal;
     font-size: 200%;
-    font-family: 'Times New Roman', Times, serif ;
+    font-family: "Mystery Quest", cursive;
     text-align: right;
     line-height: 1;
-    text-decoration: line-through   ;
 }
-/* p {
-    font-family: "Mystery Quest", cursive;
-} */
-
-/* p { 
-    font-family: "Tilt Prism";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 100%;
-    text-align: left;
-    line-height: 200%;
-    text-decoration: line-through;
-    background-color: yellow;
-} */
