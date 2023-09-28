@@ -21,6 +21,11 @@ multiplicacao.onclick = () => {
     resultado.innerText = 'O resultado da multiplicação é: ' + operationResult;
 }
 divisao.onclick = () => {
-    let operationResult = parseInt(primeiroNumero.value) / parseInt(segundoNumero.value);
-    resultado.innerText = 'O resultado da divisão é: ' + operationResult;
+    if( parseInt(segundoNumero.value) != 0){
+        let operationResult = parseInt(primeiroNumero.value) / parseInt(segundoNumero.value);
+        resultado.innerText = 'O resultado da divisão é: ' + operationResult;
+    }else{
+        resultado.innerText = 'O segundo número não pode ser zero';
+    }
+   
 }
