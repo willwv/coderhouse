@@ -1,18 +1,22 @@
 let atividades = [];
 let input = document.getElementById("input");
 let btn = document.getElementById("adicionar");
-let btnVisualizar = document.getElementById("visualizar");
 let btnApagar = document.getElementById("apagar");
+let listaAtividades = document.getElementById("atividades");
+
 
 btn.onclick = () => {
-    atividades.push(input.value);
+    let itemLista = document.createElement("li");
+    itemLista.innerText = input.value;
+    listaAtividades.append(itemLista)
+
     input.value = "";
 }
 
-btnVisualizar.onclick = () => {
-    console.log(atividades);
-}
-
 btnApagar.onclick = () => {
-    atividades = [];
+    let itemsLista = document.querySelectorAll("#atividades li");
+    
+    if(itemsLista.length > 0){
+        itemsLista[itemsLista.length - 1].remove();
+    }
 }
