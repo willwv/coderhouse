@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests</title>
+    <link rel="stylesheet" href="request.css">
+</head>
+
+<body>
+    <section>
+        <h1>Preenche endereço pelo CEP</h1>
+        <span>Informe seu CEP: </span>
+        <input id="cep" type="number" placeholder="Informe seu CEP aqui">
+        <button id="buscarCep">Buscar endereço</button>
+
+        <section id="informacoes">
+            <span>Rua: </span>
+            <input id="rua" type="text" disabled>
+            <span>Bairro: </span>
+            <input id="bairro" type="text" disabled>
+            <span>Cidade: </span>
+            <input id="cidade" type="text" disabled>
+            <span>Estado (UF): </span>
+            <input id="estado" type="text" disabled>
+        </section>
+    </section>
+
+    <section>
+        <h1>Informações sobre países</h1>
+        <span>Digite o nome de um país em inglês: </span>
+        <input id="pais" type="text" placeholder="Informe o nome de um país aqui">
+        <button id="buscarPais">Buscar país</button>
+        <br>
+        <span>O nome oficial do páis é: </span>
+        <input id="nomeOficial" type="text" disabled>
+        <div id="bandeira"></div>
+    </section>
+    <script src="request.js"></script>
+</body>
+
+</html>
