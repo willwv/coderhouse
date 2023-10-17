@@ -1,0 +1,60 @@
+section {
+    background-image: url("https://res.cloudinary.com/hdsqazxtw/image/upload/v1642799651/WWW/Group_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 
+section article {
+    background-color: red;
+    width: 500px;
+    height: 500px;
+}
+
+section article p {
+    line-height: 4;
+} */
+
+.bordas-arredondadas{
+    border-radius: 20px;
+} 
+
+#produtos {
+    padding: 0px;
+    margin: 0px;
+}
+.tamanho-botao {
+    width: 500px;
+}
+
+.botao-vermelho {
+    background-color: red;
+}
+
+#produtos {
+    background-color: aqua;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.corrigir-lista {
+    padding: 10px;
+}
+
+
+
+@font-face {
+    font-family: "Mystery Quest";
+    src: url("MysteryQuest-Regular.ttf");
+}
+p {
+    color:  #0c250c;
+    font-weight: normal;
+    font-size: 200%;
+    font-family: "Mystery Quest", cursive;
+    text-align: right;
+    line-height: 1;
+}

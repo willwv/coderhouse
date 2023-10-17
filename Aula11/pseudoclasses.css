@@ -1,0 +1,95 @@
+.texto {
+    color: green;
+    font-size: 48px;
+}
+
+/* .texto:hover {
+    cursor: pointer;
+    background-color: red;
+} */
+
+.link:visited {
+    color: green;
+}
+
+.link:active {
+    color: yellow;
+}
+
+#inputText {
+    color: purple;
+    font-size: 32px;
+}
+#inputText:focus {
+    font-size: 100px;
+}
+
+li:first-child{
+    /* background-color: red; */
+    font-size: 30px;
+    color: yellow;
+}
+
+li:last-child{
+    /* background-color: blue; */
+}
+li:nth-child(2n+1){
+    background-color: aqua;
+}
+div p:not(.exemplo4){
+    color: aqua;
+}
+
+option:checked {
+    color: red;
+    /* nao funciona no mac */
+}
+
+input[type="checkbox"]:checked {
+    margin-left: 30px;
+}
+
+input[type="radio"]:checked {
+    margin-left: 30px;
+}
+
+input[type="email"], input[type="text"]  {
+    font-size: 42px;
+}
+input[type="email"]:valid {
+    color: blue;
+}
+input[type="email"]:invalid {
+    color: red;
+}
+input:required {
+    background-color: aquamarine;
+}
+input:disabled {
+    /* padding: 60px; */
+    font-size: 100px;
+    
+}
+
+input[type="email"]::placeholder {
+    /* color: yellow; */
+    font-size: 10px;
+}
+
+span p::first-letter {
+    font-size: 100px;
+}
+
+p::selection {
+    background-color: red;
+    /* font-size: 100px; */
+}
+
+p::first-line {
+    color: blue;
+}
+
+ul li::marker {
+    color: red;
+    font-size: 50px;
+}

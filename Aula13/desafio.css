@@ -1,0 +1,26 @@
+header {
+    background-color: yellow;
+}
+footer {
+    background-color: yellow;
+}
+
+main {
+    display: flex;
+    height: 500px;
+}
+
+nav {
+    width: 25%;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+aside {
+    width: 25%;
+    background-color: gray;
+}
+article {
+    width: 50%;
+    background-color: azure;
+}

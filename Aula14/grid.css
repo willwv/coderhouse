@@ -1,0 +1,87 @@
+#grade {
+    background-color: antiquewhite;
+    height: 1000px;
+    display: grid;
+
+    grid-template-rows: 100px 100px 100px 100px; 
+    grid-template-columns: 200px 300px 200px;
+
+    grid-template-areas:
+     ". header header"
+     "nav produtos publicidade"
+     "nav servicos publicidade"
+     "nav footer .";
+
+     grid-gap: 5px;
+     /* justify-items: center;
+     align-items: center; */
+     /* justify-content: space-evenly; */
+     /* align-content: space-evenly; */
+}
+
+#grade__header {
+    grid-area: header ;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#grade_produtos {
+    grid-area: produtos ;
+    justify-self: end;
+}
+
+#grade_servicos {
+    grid-area: servicos ;
+    align-self: center;
+    justify-self: center;
+}
+
+#grade__nav {
+    grid-area: nav ;
+}
+
+#grade__aside {
+    grid-area: publicidade;
+}
+
+#grade__footer {
+    grid-area: footer;
+}
+
+.border {
+    border: 1px solid black;
+}
+ 
+
+#desafio {
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr auto 1fr;
+
+    grid-template-areas: 
+    "header header header"
+    "nav content content"
+    "nav footer footer";
+}
+
+#desafio__header {
+    background-color: blueviolet;
+    grid-area: header;
+}
+
+#desafio__nav {
+    background-color: yellow;
+    grid-area: nav;
+}
+
+#desafio__main {
+    background-color: orange;
+    grid-area: content;
+}
+
+#desafio__footer {
+    background-color: green;
+    grid-area: footer;
+}
