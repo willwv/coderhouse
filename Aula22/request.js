@@ -48,3 +48,21 @@ function exibirInformacoesDoPaisNaTela(informacoes) {
 
     nomeOficial.value = informacoes[0].name.nativeName.deu.official;
 }
+
+function obterFrutas(){
+    fetch(`https://www.fruityvice.com/api/fruit/all`)
+    .then(response => response.json())
+    .then(response => exibirFrutasNaTela(response))
+}
+
+function exibirFrutasNaTela(response){
+    let sectionFrutas = document.getElementById("frutas");
+
+    response.forEach(fruta => {
+        let span = document.createElement("span");
+        span.innerText = fruta.name;
+        sectionFrutas.append(span)
+    });
+}
+
+obterFrutas();
